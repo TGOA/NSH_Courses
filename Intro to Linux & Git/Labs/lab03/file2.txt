@@ -1,0 +1,6 @@
+Initial setup complete
+in file2
+Added feature A in file 2
+Added feature B in file 2
+<<<<<<< HEAD
+change f2 to b1

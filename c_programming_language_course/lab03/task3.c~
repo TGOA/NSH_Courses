@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(){
+  int ncities = 0, sum = 0, population = 0, max_population = 0, min_population = 0, mean = 0;
+  printf("\e[1mEnter the number of cities: \e[m ");
+  scanf("%d", &ncities);
+
+  for(int i = 0; i < ncities; i++){
+    printf("\e[1mEnter the number of city %d: \e[m \n", i + 1);
+    scanf("%d", &population);
+    sum = sum + population;
+    if (max_population < population){
+      max_population = population;
+    }
+
+    if (min_population > population){
+      min_population = population;
+    }
+    
+  }
+  mean = (sum/ncities);
+  printf("\e[1mMaximum population: \e[m", max_population);
+  printf("\e[1mMinimum population: \e[m", min_population);
+  printf("\e[1mMean population: \e[m", mean);
+  
+}

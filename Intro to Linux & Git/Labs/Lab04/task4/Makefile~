@@ -1,0 +1,35 @@
+# Compiler
+CC = gcc
+
+# Source files
+SRCS = main.c inc1/math_utils.c inc2/string_utils.c
+
+# Output executable
+OUT = build/output
+
+# Flag for enabling -Wall
+CFLAGS = -g
+
+# Targets
+all: build
+	$(CC) $(CFLAGS) -o $(OUT) $(SRCS)
+
+build:
+	mkdir -p build
+
+clean:
+	rm -rf build
+
+help:
+	@echo "Makefile usage:"
+	@echo "  make all    - Build the project"
+	@echo "  make clean  - Remove the build directory"
+	@echo "  make help   - Show this help message"
+
+# Toggle the -Wall flag
+ifdef ENABLE_WALL
+CFLAGS += -Wall
+endif
+
+# Default action when no target is provided
+.DEFAULT_GOAL := help
