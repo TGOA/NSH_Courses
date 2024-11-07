@@ -25,7 +25,7 @@ int main() {
                 return 1;
             }
 
-            char buffer[BUFFER_SIZE];
+            char buffer[1024];
             if (fgets(buffer, 1024, file) != NULL) {
                 for (int i = 0; buffer[i] != '\0'; i++) {
                     if (buffer[i] >= 'A' && buffer[i] <= 'Z') {
@@ -93,7 +93,7 @@ int main() {
             fclose(file);
         } else if (sub_choice == 2) {
             printf("Enter the string to decrypt: ");
-            fgets(input, BUFFER_SIZE, stdin);
+            fgets(input, 1024, stdin);
             input[strcspn(input, "\n")] = 0;
             for (int i = 0; input[i] != '\0'; i++) {
                 if (input[i] >= 'A' && input[i] <= 'Z') {
