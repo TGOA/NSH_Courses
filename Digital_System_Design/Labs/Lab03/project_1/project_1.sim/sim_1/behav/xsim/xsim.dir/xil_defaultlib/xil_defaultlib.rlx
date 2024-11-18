@@ -1,0 +1,11 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/it/Downloads/task1/src/counter_n_bit.sv,1731075515,systemVerilog,,/home/it/Downloads/task1/src/decoder.sv,,counter_n_bit,,,,,,,,
+/home/it/Downloads/task1/src/decoder.sv,1731076163,systemVerilog,,/home/it/Downloads/task1/src/sev_seg_controller.sv,,decoder,,,,,,,,
+/home/it/Downloads/task1/src/sev_seg.sv,1731446116,systemVerilog,,,,sev_seg_top,,,,,,,,
+/home/it/Downloads/task1/src/sev_seg_controller.sv,1731443137,systemVerilog,,/home/it/Downloads/task1/src/sev_seg_decoder.sv,,sev_seg_controller,,,,,,,,
+/home/it/Downloads/task1/src/sev_seg_decoder.sv,1731528040,systemVerilog,,/home/it/eda_training/Digital_System_Design/Labs/Lab03/project_1/project_1.srcs/sim_1/new/tb_seven_seg_decoder.v,,seven_seg_decoder,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Labs/Lab03/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Labs/Lab03/project_1/project_1.srcs/sim_1/new/tb_seven_seg_decoder.v,1731528537,systemVerilog,,,,tb_seven_seg_decoder,,,,,,,,

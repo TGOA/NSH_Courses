@@ -1,0 +1,18 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+0000	 1000000
+0001	 1111001
+0010	 0100100
+0011	 0110000
+0100	 0011001
+0101	 0010010
+0110	 0000010
+0111	 1111000
+1000	 0000000
+1001	 0010000
+1010	 0001000
+1011	 0000000
+1100	 1000110
+1101	 1000000
+1110	 0000110
+$finish called at time : 25 ns : File "/home/it/eda_training/Digital_System_Design/Labs/Lab03/project_1/project_1.srcs/sim_1/new/tb_seven_seg_decoder.v" Line 21

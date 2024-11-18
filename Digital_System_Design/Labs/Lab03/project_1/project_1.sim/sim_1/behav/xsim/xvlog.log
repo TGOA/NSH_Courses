@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/it/Downloads/task1/src/sev_seg_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/it/eda_training/Digital_System_Design/Labs/Lab03/project_1/project_1.srcs/sim_1/new/tb_seven_seg_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seven_seg_decoder
