@@ -1,0 +1,6 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Test 1: A = 00011000, B = 00100100, Result = 00111100
+Test 2: A = 11110000, B = 00010001, Result = 00000001
+Test 3: A = 00011000, B = 01000000, Result = 01011000
+$stop called at time : 30 ns : File "/home/it/eda_training/Digital_System_Design/Labs/Lab06/Lab06.srcs/sim_1/new/tb_fixed_point_adder.sv" Line 70

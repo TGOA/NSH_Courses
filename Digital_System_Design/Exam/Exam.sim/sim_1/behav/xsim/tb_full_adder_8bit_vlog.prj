@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Exam.srcs/sources_1/new/tb_xor_rege.sv" \
+"../../../../Exam.srcs/sources_1/new/xor_rege.sv" \
+"../../../../Exam.srcs/sources_1/new/register.sv" \
+"../../../../Exam.srcs/sources_1/new/task1_1.sv" \
+"../../../../Exam.srcs/sources_1/new/full_addre_4bit.sv" \
+"../../../../Exam.srcs/sources_1/new/tb_full_adder4bit.sv" \
+"../../../../Exam.srcs/sources_1/new/ful_addre_8bits.sv" \
+"../../../../Exam.srcs/sources_1/new/tb_full_adder_8bit.sv" \
+"../../../../Exam.srcs/sim_1/new/tb_task1_1.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

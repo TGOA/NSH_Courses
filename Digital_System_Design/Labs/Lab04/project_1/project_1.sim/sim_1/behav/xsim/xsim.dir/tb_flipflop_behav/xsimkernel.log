@@ -2,3 +2,6 @@ Running: xsim.dir/tb_flipflop_behav/xsimk -simmode gui -wdb tb_flipflop_behav.wd
 Design successfully loaded
 Design Loading Memory Usage: 33004 KB (Peak: 33560 KB)
 Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 114740 KB (Peak: 172272 KB)
+Simulation CPU Usage: 40 ms

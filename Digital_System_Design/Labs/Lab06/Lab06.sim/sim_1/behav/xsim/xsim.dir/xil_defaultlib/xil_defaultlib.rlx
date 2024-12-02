@@ -1,0 +1,7 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/it/eda_training/Digital_System_Design/Labs/Lab06/Lab06.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Labs/Lab06/Lab06.srcs/sim_1/new/tb_fixed_point_adder.sv,1732451103,systemVerilog,,,,tb_fixed_point_adder,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Labs/Lab06/Lab06.srcs/sources_1/new/Fixed_Point_Adder.sv,1732455002,systemVerilog,,/home/it/eda_training/Digital_System_Design/Labs/Lab06/Lab06.srcs/sim_1/new/tb_fixed_point_adder.sv,,Fixed_Point_Adder,,,,,,,,

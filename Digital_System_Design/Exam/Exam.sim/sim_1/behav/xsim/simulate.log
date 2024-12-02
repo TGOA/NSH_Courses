@@ -1,0 +1,9 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Time	A		B		cin	cout	cout2	sum1	sum2
+10	00000000	00000000	0	0	0	0000	0000
+20	00001111	00000001	0	1	0	0000	0001
+30	11111111	00000001	1	1	1	0001	0000
+40	10101010	01010101	1	1	1	0000	0000
+50	01100110	10011001	0	0	0	1111	1111
+$finish called at time : 50 ns : File "/home/it/eda_training/Digital_System_Design/Exam/Exam.srcs/sources_1/new/tb_full_adder_8bit.sv" Line 75
