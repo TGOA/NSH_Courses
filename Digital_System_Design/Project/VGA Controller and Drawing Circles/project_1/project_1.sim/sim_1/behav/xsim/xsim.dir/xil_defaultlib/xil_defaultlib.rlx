@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.srcs/sim_1/new/tb_counter.sv,1733387102,systemVerilog,,,,tb_counter,,,,,,,,
+/home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/new/comparetor.sv,1733321579,systemVerilog,,/home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/new/controller.sv,,comparetor,,,,,,,,
+/home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/new/controller.sv,1733326285,systemVerilog,,/home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/new/counter1.sv,,controller,,,,,,,,
+/home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/new/counter1.sv,1733386725,systemVerilog,,/home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.srcs/sim_1/new/tb_counter.sv,,counter1,,,,,,,,
+/home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/new/top_module.sv,1733385599,systemVerilog,,,,top_module,,,,,,,,

@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 12/04/2024 05:01:28 PM
-// Design Name: 
-// Module Name: counter1
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 
 module counter1 #(parameter n = 8 )(
@@ -27,11 +9,15 @@ module counter1 #(parameter n = 8 )(
     
     
     always @(posedge clk, negedge reset) begin 
-        if (~reset)
+        if (~reset) begin
             counter <= 0;
-        else
+        end
+        else if(en_x==1)  begin
             counter <= counter +1;
-    
+       end
+        else begin
+        counter <= counter ;
+        end
     end
     
     

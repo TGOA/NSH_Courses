@@ -57,8 +57,9 @@ module top_module(
      .btnc(btnc),
      .en_x(en_x),
      .fini(fini),
-     .rgb(rgb),
+     .colour_signal(rgb),
      .plot(plot)
+     
     ); 
     comparetor #(.n(8)) x_comparetor (
         .x(counterxbus),
@@ -74,5 +75,7 @@ module top_module(
     
     );
     
+    
+    vga_core moin(.clk(clk), .resetn(reset), .x(), .y(), .plot(), .VGA_R(), .VGA_G(), .VGA_B(), .VGA_VS(), .VGA_HS());
     
 endmodule

@@ -27,16 +27,17 @@ module top_module2(
     logic [2:0]color;
     logic [7:0] counterxbus;
     logic [6:0] counteryby;
-    logic compx_out;
+    logic compy_out,compx_out;
     logic en_x;
     logic plot;
     logic colour_signal;
-    logic x_reset, y_reset, compy_out, fnsh;
+    logic x_reset, y_reset, fnsh;
     assign x_reset = ~reset |  compx_out;
     assign y_reset = ~reset |  compy_out;
     assign fnsh = compy_out & compx_out;
     
-    
+            vga_core moin(.clk(clk), .resetn(reset), .x(counterxbus), .y(counteryby), .plot(), .VGA_R(), .VGA_G(), .VGA_B(), .VGA_VS(), .VGA_HS());
+
     counter1 #(.n(8)) x_counter(
         .clk(clk),
         .reset(x_reset),
@@ -77,8 +78,8 @@ module top_module2(
      .colour_signal(colour_signal)
     ); 
     
-    assign color = colour_signal ? counteryby : 0;
+    assign color = colour_signal ? counteryby [2:0]: 0;
     
-    
+
     
 endmodule

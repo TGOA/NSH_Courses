@@ -55,7 +55,7 @@ module controller2(
                 next_state = idle;    
             end     
            black: next_state = fini? idle: black;
-           colour: next_state = fini ? idle: black;
+           colour: next_state = fini ? idle: colour;
             default: next_state = idle;
         endcase
    
