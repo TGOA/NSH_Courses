@@ -1,0 +1,10 @@
+vga_controller.v,verilog,xil_defaultlib,../../VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/new/vga_controller.v,
+FPGA.sv,systemverilog,xil_defaultlib,../../VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/new/FPGA.sv,
+comparetor.sv,systemverilog,xil_defaultlib,../../VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/new/comparetor.sv,
+controller2.sv,systemverilog,xil_defaultlib,../../VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/new/controller2.sv,
+counter1.sv,systemverilog,xil_defaultlib,../../VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/new/counter1.sv,
+top_module2.sv,systemverilog,xil_defaultlib,../../VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/new/top_module2.sv,
+vga_core.sv,systemverilog,xil_defaultlib,../../VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/new/vga_core.sv,
+video_memory.sv,systemverilog,xil_defaultlib,../../VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/new/video_memory.sv,
+tb_FPGA.sv,systemverilog,xil_defaultlib,../../VGA Controller and Drawing Circles/project_1/project_1.srcs/sim_1/new/tb_FPGA.sv,
+glbl.v,Verilog,xil_defaultlib,glbl.v

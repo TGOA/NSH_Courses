@@ -24,7 +24,7 @@ module controller2(
     input clk, reset, btnc,fini, btnd,
     output logic en_x, plot,colour_signal
     );
-    typedef enum logic {
+    typedef enum logic[2:0] {
         idle, 
         black,
         colour
@@ -39,12 +39,12 @@ module controller2(
             current_state <= idle;
             end
          else begin
-            next_state <= current_state;
+            current_state <= next_state;
            end
 
         end
         
-         always @(btnc, current_state, btnd) begin
+         always @(*) begin
         case(current_state)
          idle: begin 
             if (btnc)
@@ -63,7 +63,7 @@ module controller2(
     end
 
     //output state
-    always_comb begin
+    always@(*) begin
         case(current_state)
             idle: begin
                 en_x = 0;

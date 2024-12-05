@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_FPGA_time_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_FPGA" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1028195379001fs"></ZoomEndTime>
+      <Cursor1Time time="313686726000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject type="logic" fp_name="/tb_FPGA/CLK100MHZ">
+      <obj_property name="ElementShortName">CLK100MHZ</obj_property>
+      <obj_property name="ObjectShortName">CLK100MHZ</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/CPU_RESETN">
+      <obj_property name="ElementShortName">CPU_RESETN</obj_property>
+      <obj_property name="ObjectShortName">CPU_RESETN</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/BTNC">
+      <obj_property name="ElementShortName">BTNC</obj_property>
+      <obj_property name="ObjectShortName">BTNC</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/BTND">
+      <obj_property name="ElementShortName">BTND</obj_property>
+      <obj_property name="ObjectShortName">BTND</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/VGA_VS">
+      <obj_property name="ElementShortName">VGA_VS</obj_property>
+      <obj_property name="ObjectShortName">VGA_VS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/VGA_HS">
+      <obj_property name="ElementShortName">VGA_HS</obj_property>
+      <obj_property name="ObjectShortName">VGA_HS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/VGA_R">
+      <obj_property name="ElementShortName">VGA_R</obj_property>
+      <obj_property name="ObjectShortName">VGA_R</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/VGA_G">
+      <obj_property name="ElementShortName">VGA_G</obj_property>
+      <obj_property name="ObjectShortName">VGA_G</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/VGA_B">
+      <obj_property name="ElementShortName">VGA_B</obj_property>
+      <obj_property name="ObjectShortName">VGA_B</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/DUT/cir/btnc">
+      <obj_property name="ElementShortName">btnc</obj_property>
+      <obj_property name="ObjectShortName">btnc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/DUT/cir/btnd">
+      <obj_property name="ElementShortName">btnd</obj_property>
+      <obj_property name="ObjectShortName">btnd</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/DUT/cir/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_FPGA/DUT/cir/color">
+      <obj_property name="ElementShortName">color[2:0]</obj_property>
+      <obj_property name="ObjectShortName">color[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/DUT/cir/compx_out">
+      <obj_property name="ElementShortName">compx_out</obj_property>
+      <obj_property name="ObjectShortName">compx_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_FPGA/DUT/cir/counterxbus">
+      <obj_property name="ElementShortName">counterxbus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">counterxbus[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_FPGA/DUT/cir/counteryby">
+      <obj_property name="ElementShortName">counteryby[6:0]</obj_property>
+      <obj_property name="ObjectShortName">counteryby[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_FPGA/DUT/cir/current_state">
+      <obj_property name="ElementShortName">current_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_FPGA/DUT/cir/next_state">
+      <obj_property name="ElementShortName">next_state[0:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/DUT/cir/plot">
+      <obj_property name="ElementShortName">plot</obj_property>
+      <obj_property name="ObjectShortName">plot</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/DUT/cir/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/DUT/cir/x_counter_n_9">
+      <obj_property name="ElementShortName">x_counter_n_9</obj_property>
+      <obj_property name="ObjectShortName">x_counter_n_9</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/DUT/cir/y_counter_n_8">
+      <obj_property name="ElementShortName">y_counter_n_8</obj_property>
+      <obj_property name="ObjectShortName">y_counter_n_8</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_FPGA/DUT/cir/y_counter_n_9">
+      <obj_property name="ElementShortName">y_counter_n_9</obj_property>
+      <obj_property name="ObjectShortName">y_counter_n_9</obj_property>
+   </wvobject>
+</wave_config>

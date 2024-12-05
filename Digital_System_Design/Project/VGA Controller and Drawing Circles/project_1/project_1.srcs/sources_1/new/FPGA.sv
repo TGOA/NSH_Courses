@@ -22,11 +22,11 @@
 module FPGA(
     input wire CLK100MHZ,    // using the same name as pin names
     input wire CPU_RESETN,BTNC, BTND,   
-    output wire CA, CB, CC, CD, CE, CF, CG, DP,
+//    output wire CA, CB, CC, CD, CE, CF, CG, DP,
     output logic VGA_VS,VGA_HS,
-    output logic  [3:0] VGA_R,VGA_G, VGA_B,
-    output wire [7:0] AN,    
-    input wire [15:0] SW     
+    output logic  [3:0] VGA_R,VGA_G, VGA_B
+//    output wire [7:0] AN,    
+//    input wire [15:0] SW     
 );
 
 
@@ -37,20 +37,37 @@ logic plot;
 logic [7:0]x;
 logic [6:0]y;
 //logic VGA_VS,VGA_HS;
-//logic VGA_R,VGA_G, VGA_B;
+logic VGA_R,VGA_G, VGA_B;
 logic [2:0] rgb;
 
 assign reset_n = CPU_RESETN;
 assign clk = CLK100MHZ;
 
-top_module2 imp (.clk(clk), .reset(reset_n), .x(x), .y(y), .plot(plot), .btnc(BTNC), .btnd(BTND),
-        .color(rgb));  
-        //  .VGA_R(VGA_R), .VGA_G(VGA_G), .VGA_B(VGA_B), .VGA_VS(VGA_VS), .VGA_HS(VGA_HS));
+(* dont_touch ="true" *)top_module2 cir (
+     
+     .clk(clk),
+     .reset(reset_n),
+     .btnc(BTNC),
+     .btnd(BTND),
+     .plot(plot),
+     .counterxbus(x),
+     .counteryby(y),
+     .color(rgb)
+
+);
     
 
- vga_core moni(.clk(clk), .resetn(reset_n), .x(x), .y(y), .plot(plot), .color(rgb),
+(* dont_touch ="true" *) vga_core moni(.clk(clk), .resetn(reset_n), .x(x), .y(y), .plot(plot), .color(rgb),
 .VGA_R(VGA_R), .VGA_G(VGA_G), .VGA_B(VGA_B), .VGA_VS(VGA_VS), .VGA_HS(VGA_HS));
 
+
+ila_0 your_instance_name (
+	.clk(clk), // input wire clk
+
+
+	.probe0(x), // input wire [7:0]  probe0  
+	.probe1(y) // input wire [6:0]  probe1
+);
 wire [6:0] Seg;
 wire [3:0] digits[0:7];
 wire [3:0] LED;
