@@ -15,9 +15,7 @@ module counter1 #(parameter n = 8 )(
         else if(en_x==1)  begin
             counter <= counter +1;
        end
-        else begin
-        counter <= counter ;
-        end
+
     end
     
     

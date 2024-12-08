@@ -1,7 +1,4 @@
-Running: xsim.dir/tb_FPGA_behav/xsimk -simmode gui -wdb tb_FPGA_behav.wdb -simrunnum 0 -socket 32775
+Running: xsim.dir/tb_FPGA_behav/xsimk -simmode gui -wdb tb_FPGA_behav.wdb -simrunnum 0 -socket 37023
 Design successfully loaded
 Design Loading Memory Usage: 33060 KB (Peak: 33580 KB)
-Design Loading CPU Usage: 60 ms
-Simulation completed
-Simulation Memory Usage: 115056 KB (Peak: 172328 KB)
-Simulation CPU Usage: 260 ms
+Design Loading CPU Usage: 20 ms

@@ -75,9 +75,7 @@ set rc [catch {
   set_property parent.project_path {/home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.xpr} [current_project]
   set_property ip_output_repo {{/home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet {{/home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.runs/synth_1/FPGA.dcp}}
-  read_ip -quiet {{/home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.srcs/sources_1/ip/ila_0/ila_0.xci}}
   read_xdc /home/it/Lab/AL_mamlo7/NSH_Courses/Digital_System_Design/Labs/pin-assignment.xdc
   link_design -top FPGA -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
@@ -158,7 +156,6 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force FPGA.mmi }
   write_bitstream -force FPGA.bit 
   catch {write_debug_probes -quiet -force FPGA}

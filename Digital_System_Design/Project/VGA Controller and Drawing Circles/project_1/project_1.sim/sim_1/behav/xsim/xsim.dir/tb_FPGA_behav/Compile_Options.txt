@@ -1,1 +1,1 @@
--wto "957055026ca041e797a8c31c0dc920f6" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "tb_FPGA_behav" "xil_defaultlib.tb_FPGA" "xil_defaultlib.glbl" -log "elaborate.log" 
+-wto "957055026ca041e797a8c31c0dc920f6" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "tb_FPGA_behav" "xil_defaultlib.tb_FPGA" "xil_defaultlib.glbl" -log "elaborate.log" 

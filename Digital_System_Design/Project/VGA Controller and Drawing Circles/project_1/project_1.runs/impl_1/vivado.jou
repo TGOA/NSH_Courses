@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Dec  5 19:55:58 2024
-# Process ID: 437991
+# Start of session at: Sun Dec  8 13:03:33 2024
+# Process ID: 164409
 # Current directory: /home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.runs/impl_1
 # Command line: vivado -log FPGA.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source FPGA.tcl -notrace
 # Log file: /home/it/Desktop/Courses/NSH_Courses/Digital_System_Design/Project/VGA Controller and Drawing Circles/project_1/project_1.runs/impl_1/FPGA.vdi

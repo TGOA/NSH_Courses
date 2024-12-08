@@ -24,9 +24,9 @@ module FPGA(
     input wire CPU_RESETN,BTNC, BTND,   
 //    output wire CA, CB, CC, CD, CE, CF, CG, DP,
     output logic VGA_VS,VGA_HS,
-    output logic  [3:0] VGA_R,VGA_G, VGA_B
+    output logic  [3:0] VGA_R,VGA_G, VGA_B,
 //    output wire [7:0] AN,    
-//    input wire [15:0] SW     
+    input wire [15:0] SW     
 );
 
 
@@ -37,7 +37,7 @@ logic plot;
 logic [7:0]x;
 logic [6:0]y;
 //logic VGA_VS,VGA_HS;
-logic VGA_R,VGA_G, VGA_B;
+//logic VGA_R,VGA_G, VGA_B;
 logic [2:0] rgb;
 
 assign reset_n = CPU_RESETN;
@@ -61,17 +61,17 @@ assign clk = CLK100MHZ;
 .VGA_R(VGA_R), .VGA_G(VGA_G), .VGA_B(VGA_B), .VGA_VS(VGA_VS), .VGA_HS(VGA_HS));
 
 
-ila_0 your_instance_name (
-	.clk(clk), // input wire clk
+//ila_0 your_instance_name (
+//	.clk(clk), // input wire clk
 
 
-	.probe0(x), // input wire [7:0]  probe0  
-	.probe1(y) // input wire [6:0]  probe1
-);
-wire [6:0] Seg;
-wire [3:0] digits[0:7];
-wire [3:0] LED;
-wire serial_out;
+//	.probe0(x), // input wire [7:0]  probe0  
+//	.probe1(y) // input wire [6:0]  probe1
+//);
+//wire [6:0] Seg;
+//wire [3:0] digits[0:7];
+//wire [3:0] LED;
+//wire serial_out;
 //logic reset, se, serial_in;
 
 

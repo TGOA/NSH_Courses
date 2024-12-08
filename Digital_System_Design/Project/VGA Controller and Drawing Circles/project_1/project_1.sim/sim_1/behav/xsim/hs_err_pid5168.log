@@ -1,0 +1,14 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/home/it/Xilinx/Vivado/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xb6aadb) [0x70ccf476aadb]
+/home/it/Xilinx/Vivado/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(JVM_handle_linux_signal+0xbb) [0x70ccf476fe1b]
+/home/it/Xilinx/Vivado/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xb647b8) [0x70ccf47647b8]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45320) [0x70cd50c45320]
+/home/it/Xilinx/Vivado/Vivado/2019.1/lib/lnx64.o/librdi_xicom_hw.so(XHWName::operator<(XHWName const&) const+0x2) [0x70ccfb706df2]
+/home/it/Xilinx/Vivado/Vivado/2019.1/lib/lnx64.o/librdi_labtools.so(std::_Rb_tree<XHWName, std::pair<XHWName const, XHWProperty>, std::_Select1st<std::pair<XHWName const, XHWProperty> >, std::less<XHWName>, std::allocator<std::pair<XHWName const, XHWProperty> > >::find(XHWName const&)+0x38) [0x70cd016b5478]
+/home/it/Xilinx/Vivado/Vivado/2019.1/lib/lnx64.o/librdi_xicom_hw.so(XHWDevice::getIsProgrammable() const+0x3e) [0x70ccfb74f15e]
+/home/it/Xilinx/Vivado/Vivado/2019.1/lib/lnx64.o/librdi_labtools.so(LTDHWDevice::getStatus[abi:cxx11]() const+0x2c) [0x70cd0169d57c]
+/home/it/Xilinx/Vivado/Vivado/2019.1/lib/lnx64.o/librdi_labtools.so(Java_ui_data_labtools_lthwdatai_HWDevice_1getStatus+0x40) [0x70cd01941ec0]
+[0x70cce4686c91]
