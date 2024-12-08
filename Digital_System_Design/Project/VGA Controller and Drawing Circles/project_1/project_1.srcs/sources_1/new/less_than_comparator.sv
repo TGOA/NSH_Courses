@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 12/04/2024 05:00:09 PM
+// Create Date: 12/08/2024 10:27:56 PM
 // Design Name: 
-// Module Name: comparetor
+// Module Name: less_than_comparator
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,20 +20,20 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module comparetor #(parameter n = 8)(
+
+module less_than_comparator #(parameter n = 8)(
     input logic [n-1: 0] x,y,
-    output logic signal
+    output logic less_than_signal
 );
 
 
     always@(*) begin 
-        if (x == y) 
-            signal = 1;
+        if (x <= y) 
+            less_than_signal = 1;
             
         else 
-            signal = 0; 
+            less_than_signal = 0; 
     
     end 
 
 endmodule
-

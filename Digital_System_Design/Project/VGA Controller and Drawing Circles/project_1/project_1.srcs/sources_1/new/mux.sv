@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 12/04/2024 05:00:09 PM
+// Create Date: 12/08/2024 10:00:11 PM
 // Design Name: 
-// Module Name: comparetor
+// Module Name: mux
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,20 +20,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module comparetor #(parameter n = 8)(
-    input logic [n-1: 0] x,y,
-    output logic signal
-);
-
-
-    always@(*) begin 
-        if (x == y) 
-            signal = 1;
-            
-        else 
-            signal = 0; 
+module mux(
+    input logic a, b, sel,
+    output logic y
+    );
+    always_comb begin 
+        if (sel == 0 )
+            y = a;
+        else
+            y = b;
     
-    end 
-
+    end
+    
+    
 endmodule
-

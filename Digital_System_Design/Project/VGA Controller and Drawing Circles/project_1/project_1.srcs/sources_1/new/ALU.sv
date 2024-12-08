@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 12/04/2024 05:00:09 PM
+// Create Date: 12/08/2024 09:46:33 PM
 // Design Name: 
-// Module Name: comparetor
+// Module Name: ALU
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,20 +20,23 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module comparetor #(parameter n = 8)(
-    input logic [n-1: 0] x,y,
-    output logic signal
-);
-
-
-    always@(*) begin 
-        if (x == y) 
-            signal = 1;
-            
-        else 
-            signal = 0; 
+module ALU #(parameter n = 8)( 
+    input logic [n - 1: 0] a, b,
+    input logic op_select,
+    output logic [n: 0]result
+    );
     
-    end 
-
-endmodule
-
+    always_comb begin
+        
+        if (op_select == 0) begin
+           result = a + b;
+        end
+        
+        else begin 
+        result = {1'b0, a} - b;
+        
+        end
+        
+    end
+    
+endmodule 

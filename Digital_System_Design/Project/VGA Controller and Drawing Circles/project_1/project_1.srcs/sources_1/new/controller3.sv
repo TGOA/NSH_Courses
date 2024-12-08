@@ -19,111 +19,128 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module controller3(
-  input clk, reset, btnc,  Fcalk, comp_d, xycomp,
-  input [2:0] steps, 
-  output logic en_x, plot,en_y, d_select, xmux_select, ymux_select, xalu_select, yalu_select 
-      );
-      
-      typedef enum logic [2:0] {still,cir,dcalk} state_t;      
-      state_t current_state, next_state;
+    input clk, btnc, reset, incstruction_comparator, xy_comparator, 
+    input [2:0] steps,
+    input [5:0] d,
+    output logic d_select, x_alu, y_alu, x_mux, y_mux, plot, en_x, en_y
+);
 
-      always@(posedge clk, negedge reset) begin
-      if(reset==0) begin
-      current_state <= still;
-     end else begin
-     current_state <= next_state;
-     end
-     end
-     
-     
-     
-   always@(*) begin 
-   case(current_state) 
-    still: next_state = btnc ? cir: still;
-    cir: next_state =  comp_d?  dcalk :cir;
-    dcalk: next_state = Fcalk? cir: dcalk;
-endcase
-end
- always@(*) begin
-        case(current_state)
-            still: begin
-                en_x = 0;
-                en_y = 0;
-                plot = 0;
-                d_select = 0;
-                xmux_select = 0;
-                ymux_select = 0;
-                xalu_select = 0;
-                yalu_select = 0;
-              end
-              
-             cir: 
-              begin
-                en_x = 1;
-                en_y = 0;
-                plot = 1;
-                d_select = 1;
-                case (steps)
-                   0: begin 
-                xmux_select = 0;
-                ymux_select = 0;
-                xalu_select = 0;
-                yalu_select = 0;
-                end
-                1: begin 
-                xmux_select = 0;
-                ymux_select = 0;
-                xalu_select = 1;
-                yalu_select = 0;
-                end
-                2: begin 
-                xmux_select = 0;
-                ymux_select = 0;
-                xalu_select = 0;
-                yalu_select = 1;
-                end
-                3: begin 
-                xmux_select = 0;
-                ymux_select = 0;
-                xalu_select = 1;
-                yalu_select = 1;
-                end
-                4: begin 
-                xmux_select = 1;
-                ymux_select = 1;
-                xalu_select = 0;
-                yalu_select = 0;
-                end
-                5: begin 
-                xmux_select = 1;
-                ymux_select = 1;
-                xalu_select = 1;
-                yalu_select = 0;
-                end
-                6: begin 
-                xmux_select = 1;
-                ymux_select = 1;
-                xalu_select = 0;
-                yalu_select = 1;
-                end
-                7: begin 
-                xmux_select = 1;
-                ymux_select = 1;
-                xalu_select = 1;
-                yalu_select = 1;
-                end
-                endcase
-                end
-               dcalk: 
-                begin
-                    en_x = 0;
-                    en_y = 1;
-                    plot = 0;
-                end
-    
-        endcase
+    typedef enum logic [2:0] {
+        idle, 
+        colour,
+        dcalc
+    } state_t;
+
+    // State register
+    state_t current_state, next_state;
+
+    // State transition logic
+    always @(posedge clk or negedge reset) begin
+        if (~reset) begin
+            current_state <= idle;
+        end else begin
+            current_state <= next_state;
         end
-    
+    end
+
+    // Next state logic
+    always @(*) begin
+        case (current_state)
+            idle:   next_state = btnc ? colour : idle;
+            colour: next_state = incstruction_comparator ? dcalc : colour;
+            dcalc:  next_state = xy_comparator ? colour : idle;
+            default: next_state = idle;
+        endcase
+    end
+
+    // Output logic
+    always @(*) begin
+        // Default values to avoid latch inference
+        en_x = 0;
+        en_y = 0;
+        plot = 0;
+        d_select = 0;
+        x_mux = 0;
+        y_mux = 0;
+        x_alu = 0;
+        y_alu = 0;
+
+        case (current_state)
+            idle: begin 
+                // Outputs remain in default state
+            end
+            
+            colour: begin 
+                en_x = 1;
+                plot = 1;
+                d_select = 0;
+
+                case (steps) 
+                    0: begin 
+                        x_mux = 0;
+                        y_mux = 1;
+                        x_alu = 0;
+                        y_alu = 0;
+                    end
+                    1: begin 
+                        x_mux = 0;
+                        y_mux = 1;
+                        x_alu = 1;
+                        y_alu = 0;
+                    end
+                    2: begin 
+                        x_mux = 0;
+                        y_mux = 1;
+                        x_alu = 0;
+                        y_alu = 1;
+                    end
+                    3: begin 
+                        x_mux = 0;
+                        y_mux = 1;
+                        x_alu = 1;
+                        y_alu = 1;
+                    end
+                    4: begin 
+                        x_mux = 1;
+                        y_mux = 0;
+                        x_alu = 0;
+                        y_alu = 0;
+                    end
+                    5: begin 
+                        x_mux = 1;
+                        y_mux = 0;
+                        x_alu = 1;
+                        y_alu = 0;
+                    end
+                    6: begin 
+                        x_mux = 1;
+                        y_mux = 0;
+                        x_alu = 0;
+                        y_alu = 1;
+                    end
+                    7: begin 
+                        x_mux = 1;
+                        y_mux = 0;
+                        x_alu = 1;
+                        y_alu = 1;
+                    end
+                endcase
+            end
+            
+            dcalc: begin 
+                en_x = 0;
+                plot = 0;
+                if (d < 0 ) begin 
+                    en_y = 0;
+                    d_select = 0;
+                end
+                else 
+                    en_y = 1;
+                    d_select = 1;
+                
+            end
+        endcase
+    end
+
 endmodule

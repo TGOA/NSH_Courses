@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 12/04/2024 05:00:09 PM
+// Create Date: 12/08/2024 09:38:00 PM
 // Design Name: 
-// Module Name: comparetor
+// Module Name: downcounter
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,20 +20,22 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module comparetor #(parameter n = 8)(
-    input logic [n-1: 0] x,y,
-    output logic signal
+
+module downcounter #(parameter n = 8 )(
+    input logic en_x, clk, reset,
+    output logic [n-1: 0] counter
 );
-
-
-    always@(*) begin 
-        if (x == y) 
-            signal = 1;
-            
-        else 
-            signal = 0; 
     
-    end 
+    
+    always @(posedge clk, negedge reset) begin 
+        if (~reset) begin
+            counter <= 0;
+        end
+        else if(en_x==1)  begin
+            counter <= counter - 1;
+       end
 
+    end
+    
+    
 endmodule
-

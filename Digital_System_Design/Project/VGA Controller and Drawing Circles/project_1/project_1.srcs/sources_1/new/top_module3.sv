@@ -22,81 +22,119 @@
 
 
 module top_module3(
-
-    input logic clk, reset, btnc, btnd,
-    output logic  plot,
-    output logic [7:0] counterxbus,
-    output logic [6:0] counteryby,
-    output  logic [2:0]color
+    input logic clk, reset, en_x, en_y, plot,
+    input logic [7:0 ] x_counter_input , y_counter_input,
+    output logic [7:0] x_value, y_value
     );
-    ;
-
-    logic compy_out,compx_out, xcounter_reset, ycounter_reset;
-    logic en_x;
+    logic [2:0] instruction_value;
+    logic comparator_signal, less_than_signal;
+    logic x_mux_sele, y_mux_sele;
+    logic [7:0] x_output, y_output;
+    logic x_alu_select, y_alu_select;
+    logic [8:0] x_alu_result, y_alu_result;
+    logic [7:0] d, d_out;
+    logic d_select;
     
-    logic colour_signal;
-    logic x_reset, y_reset, fnsh;
-   
-    counterx #(.n(8)) x_counter(
+    
+      counter1 #(.n(8)) x_counter(
         .clk(clk),
-        .reset(x_reset),
+        .reset(reset),
         .en_x(en_x),
-        .counter(counterxbus)
+        .counter(x_value),
+        .value(x_counter_input)
     );
     
-    countery #(.n(8)) y_counter(
+   counter1 #(.n(8)) y_counter(
         .clk(clk),
-        .reset(y_reset),
-        .en_x(),
-        .counter(counteryby)
-    );
-     comparetor #(.n(8)) x_comparetor (
-        .x(counterxbus),
-        .y(),
-        .signal(compx_out)
-    
-    );
-    comparetor #(.n(8)) x_comparetor2 (
-        .x(counterxbus),
-        .y(160),
-        .signal(xcounter_reset)
-    
-    );
-    
-    
-    
-      
-     comparetor #(.n(7)) y_comparetor (
-        .x(counteryby),
-        .y(119),
-        .signal(compy_out)
-    
-    );
-    comparetor #(.n(7)) y_comparetor2 (
-        .x(counteryby),
-        .y(120),
-        .signal(ycounter_reset)
-    
-    );
-    
+        .reset(reset),
+        .en_x(en_y),
+        .counter(y_value),
+        .value(y_counter_input)
         
+    );
+    
+    counter1 #(.n(8)) instruction_counter(
+        .clk(clk),
+        .reset(reset),
+        .en_x(~comparator_signal),
+        .counter(instruction_value),
+        .value(0)
+    );
+    
+     comparetor #(.n(3)) instruction_comparator (
+        .x(instruction_value),
+        .y(8),
+        .signal(comparator_signal)
+        
+   
+    
+    );
+    less_than_comparator #(.n(8)) xy_less_than_comparator(
+        .x(x_alu_result),
+        .y(y_alu_result),
+        .less_than_signal(less_than_signal)
+    
+    
+    );
+    ALU #(.n(8)) x_alu (
+        .a(80),
+        .b(x_output),
+        .op_select(x_alu_select),
+        .result(x_alu_result)
+    
+    );
+    
+    mux x_mux (
+      .a(x_value),
+      .b(y_value),
+      .sel(x_mux_sele),
+      .y(x_output)
+    
+    );
+    
+     ALU #(.n(8)) y_alu (
+        .a(80),
+        .b(y_output),
+        .op_select(y_alu_select),
+        .result(y_alu_result)
+    
+    );
+    
+    mux y_mux (
+      .a(x_value),
+      .b(y_value),
+      .sel(y_mux_sele),
+      .y(y_output)
+    
+    );
+    
     controller3 fsm (
-     .clk(clk),
-     .reset(reset),
-     .btnc(btnc),
-     .Fcalk(),
-     .ALU(),
-     .en_x(),
-     .en_y(),
-     .d_selet(),
-     .xalu_selet(),
-     .yalu_selet(),
-     .xcounter_selet(),
-     .ycounter_selet(),
-     .plot(plot)
-    ); 
     
+        .clk(clk),
+        .reset(reset),
+        .incstruction_comparator(comparator_signal),
+        .xy_comparator(less_than_signal),
+        .steps(instruction_value),
+        .d(d),
+        .d_select(d_select),
+        .x_alu(x_alu_select),
+        .y_alu(y_alu_select),
+        .x_mux(x_mux_sele),
+        .y_mux(y_mux_sele),
+        .plot(plot),
+        .en_x(en_x),
+        .en_y(en_y)
     
-
+    );
+    
+    d_block d_calc (
+        .d(d),
+        .x(x_alu_result),
+        .y(y_alu_result),
+        .d_out(d_out),
+        .d_select(d_select)
+    
+    );
+    
     
 endmodule
