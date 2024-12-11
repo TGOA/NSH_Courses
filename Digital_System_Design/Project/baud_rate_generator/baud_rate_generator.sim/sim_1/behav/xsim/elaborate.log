@@ -1,0 +1,11 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /home/it/Xilinx/Vivado/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 82e122a349b44568a49673f1def46cb3 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot transmitter_tb_behav xil_defaultlib.transmitter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/transmitter.sv:39]
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/transmitter.sv:46]
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/transmitter.sv:53]
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/transmitter.sv:63]
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/transmitter.sv:73]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

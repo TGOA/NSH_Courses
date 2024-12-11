@@ -1,0 +1,14 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sim_1/new/tb_baud_rate_generator.sv,1733837383,systemVerilog,,,,tb_baud_rate_generator,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sim_1/new/tb_transmitter.sv,1733912576,systemVerilog,,,,transmitter_tb,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/clock_devider.sv,1733837301,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sim_1/new/tb_baud_rate_generator.sv,,baud_rate_generator,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/comparetor.sv,1733912584,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/counter.sv,,comparetor,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/counter.sv,1733907911,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/filpflop.sv,,counter,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/filpflop.sv,1733909388,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/mux.sv,,d_flip_flop,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/mux.sv,1733908951,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/shift_register.sv,,mux,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/shift_register.sv,1733908759,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/transmitter.sv,,shift_register,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sources_1/new/transmitter.sv,1733909810,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.srcs/sim_1/new/tb_transmitter.sv,,transmitter,,,,,,,,
