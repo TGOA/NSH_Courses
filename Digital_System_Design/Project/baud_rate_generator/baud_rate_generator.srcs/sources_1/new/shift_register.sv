@@ -23,7 +23,7 @@
 module shift_register (
     input clk, input reset_n,
     input load, output logic Data_out,
-    input en_cun,
+    input logic en_cun,
     input [7:0] dataIn
     
 );
@@ -31,7 +31,7 @@ module shift_register (
 logic [7:0]Q;
 always@(posedge clk or negedge reset_n) begin
     if(!reset_n)
-        Q <= 8'b0000;
+        Q <= 8'b00000000;
     else if (en_cun) begin
     
         Q[0] <= Q[1];

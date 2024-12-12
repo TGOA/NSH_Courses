@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_transmitter_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_transmitter" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="165000001fs"></ZoomEndTime>
+      <Cursor1Time time="35000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="147"></NameColumnWidth>
+      <ValueColumnWidth column_width="77"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject type="logic" fp_name="/tb_transmitter/valid">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/parity">
+      <obj_property name="ElementShortName">parity</obj_property>
+      <obj_property name="ObjectShortName">parity</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/parity_type">
+      <obj_property name="ElementShortName">parity_type</obj_property>
+      <obj_property name="ObjectShortName">parity_type</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_transmitter/data_in">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/cnt_end">
+      <obj_property name="ElementShortName">cnt_end</obj_property>
+      <obj_property name="ObjectShortName">cnt_end</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/Data_out">
+      <obj_property name="ElementShortName">Data_out</obj_property>
+      <obj_property name="ObjectShortName">Data_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_transmitter/uut/fsm/current_state">
+      <obj_property name="ElementShortName">current_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_transmitter/uut/fsm/next_state">
+      <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/uut/valid">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/uut/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/uut/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/uut/parity">
+      <obj_property name="ElementShortName">parity</obj_property>
+      <obj_property name="ObjectShortName">parity</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/uut/parity_type">
+      <obj_property name="ElementShortName">parity_type</obj_property>
+      <obj_property name="ObjectShortName">parity_type</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_transmitter/uut/data_in">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/uut/cnt_end">
+      <obj_property name="ElementShortName">cnt_end</obj_property>
+      <obj_property name="ObjectShortName">cnt_end</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/uut/Data_out">
+      <obj_property name="ElementShortName">Data_out</obj_property>
+      <obj_property name="ObjectShortName">Data_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_transmitter/uut/mux_select">
+      <obj_property name="ElementShortName">mux_select[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mux_select[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/uut/paritybit">
+      <obj_property name="ElementShortName">paritybit</obj_property>
+      <obj_property name="ObjectShortName">paritybit</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/uut/pb">
+      <obj_property name="ElementShortName">pb</obj_property>
+      <obj_property name="ObjectShortName">pb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_transmitter/uut/counter">
+      <obj_property name="ElementShortName">counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/uut/Dout">
+      <obj_property name="ElementShortName">Dout</obj_property>
+      <obj_property name="ObjectShortName">Dout</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_transmitter/uut/en_ctr">
+      <obj_property name="ElementShortName">en_ctr</obj_property>
+      <obj_property name="ObjectShortName">en_ctr</obj_property>
+   </wvobject>
+</wave_config>

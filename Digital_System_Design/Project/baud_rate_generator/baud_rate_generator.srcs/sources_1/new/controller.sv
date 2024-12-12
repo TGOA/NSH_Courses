@@ -23,7 +23,7 @@
 module controller(
     input logic clk, reset, valid, cnt_end,
     output logic [1:0]mux_select,
-    output logic  en_ctr,  done
+    output logic en_ctr
     );
     
     typedef enum logic[2:0] {
@@ -57,32 +57,32 @@ module controller(
             endcase
         end
         
-        always @(*) begin 
+        always @(current_state) begin 
             case(current_state) 
                 idle: begin 
-                    mux_select = 0;
+                    mux_select = 2'b00;
                     en_ctr = 0;
-                    done = 0;
+                   // done = 0;
                 
                 end
                 
                 start: begin 
                     mux_select = 2'b01;
-                    en_ctr = 0;
-                    done = 0;
+                    en_ctr = 1;
+                    //done = 0;
                 end
                 
                 data:begin 
                     mux_select = 2'b10;
                     en_ctr = 1;
-                    done = 0;
+                    //done = 0;
                 
                 end
                 
                 parity: begin 
                     mux_select = 2'b11;
                     en_ctr = 0;
-                    done = 1;
+                    //done = 1;
                 
                 end
             
