@@ -1,6 +1,6 @@
 module baud_rate_generator #(
-    parameter DIV_FACTOR_TX = 10417,
-    parameter DIV_FACTOR_RX = 651
+    parameter DIV_FACTOR_TX = 5208,
+    parameter DIV_FACTOR_RX = 325
 )(
     input  logic clk,
     input  logic reset_n,

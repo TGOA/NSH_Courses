@@ -24,9 +24,7 @@ module transmitter(
     input logic valid, 
     input logic clk, reset,
     input logic parity,
-    input logic parity_type,
     input logic [7:0] data_in,
-    output logic cnt_end,
     output logic Data_out
     );
     
@@ -36,8 +34,14 @@ module transmitter(
     logic [2:0] counter;
     logic Dout;
     logic en_ctr;
+    logic parity_type;
     logic delayedWhatever;
+    logic cnt_end;
+
     
+    
+    
+    assign parity_type = 1;
     always @(posedge clk , negedge reset) begin
         if (~reset)
             delayedWhatever = 0;
