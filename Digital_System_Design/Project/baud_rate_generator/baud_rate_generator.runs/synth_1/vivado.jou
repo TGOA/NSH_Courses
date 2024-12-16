@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 15 08:11:24 2024
+# Process ID: 817778
+# Current directory: /home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.runs/synth_1
+# Command line: vivado -log transmitter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source transmitter.tcl
+# Log file: /home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.runs/synth_1/transmitter.vds
+# Journal file: /home/it/eda_training/Digital_System_Design/Project/baud_rate_generator/baud_rate_generator.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source transmitter.tcl -notrace

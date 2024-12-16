@@ -9,7 +9,7 @@ module tb_transmitter;
     logic parity;
     logic parity_type;
     logic [7:0] data_in;
-//    logic [1:0] mux_select;
+//  logic [1:0] mux_select;
 
     // Outputs
     logic cnt_end;
@@ -25,10 +25,10 @@ module tb_transmitter;
         .clk(clk),
         .reset(reset),
         .parity(parity),
-        .parity_type(parity_type),
+       // .parity_type(parity_type),
         .data_in(data_in),
 //        .mux_select(mux_select),
-        .cnt_end(cnt_end),
+       // .cnt_end(cnt_end),
         .Data_out(Data_out)
     );
 

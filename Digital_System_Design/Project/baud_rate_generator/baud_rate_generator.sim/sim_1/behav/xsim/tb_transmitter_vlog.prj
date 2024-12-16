@@ -1,11 +1,5 @@
 # compile verilog/system verilog design source files
 sv xil_defaultlib  \
-"../../../../baud_rate_generator.srcs/sources_1/new/comparetor.sv" \
-"../../../../baud_rate_generator.srcs/sources_1/new/controller.sv" \
-"../../../../baud_rate_generator.srcs/sources_1/new/counter.sv" \
-"../../../../baud_rate_generator.srcs/sources_1/new/filpflop.sv" \
-"../../../../baud_rate_generator.srcs/sources_1/new/mux.sv" \
-"../../../../baud_rate_generator.srcs/sources_1/new/shift_register.sv" \
 "../../../../baud_rate_generator.srcs/sources_1/new/transmitter.sv" \
 "../../../../baud_rate_generator.srcs/sim_1/new/tb_transmitter.sv" \
 

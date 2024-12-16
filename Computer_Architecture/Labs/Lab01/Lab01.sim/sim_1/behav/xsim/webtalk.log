@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 15 16:06:09 2024
+# Process ID: 858430
+# Current directory: /home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.sim/sim_1/behav/xsim/xsim.dir/tb_top_module_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.sim/sim_1/behav/xsim/xsim.dir/tb_top_module_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 15 16:06:10 2024...

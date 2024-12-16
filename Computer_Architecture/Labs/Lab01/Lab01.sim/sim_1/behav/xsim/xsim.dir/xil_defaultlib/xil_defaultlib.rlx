@@ -1,0 +1,11 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.srcs/sim_1/new/tb_top_module.sv,1734268768,systemVerilog,,,,tb_top_module,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.srcs/sources_1/new/ALU.sv,1734257825,systemVerilog,,/home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.srcs/sources_1/new/Instruction_memory.sv,,ALU,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.srcs/sources_1/new/Instruction_memory.sv,1734268922,systemVerilog,,/home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.srcs/sources_1/new/Register_file.sv,,Instruction_memory,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.srcs/sources_1/new/Register_file.sv,1734269228,systemVerilog,,/home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.srcs/sources_1/new/counter.sv,,Register_file,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.srcs/sources_1/new/counter.sv,1734268493,systemVerilog,,/home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.srcs/sources_1/new/top_module.sv,,counter,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.srcs/sources_1/new/top_module.sv,1734268583,systemVerilog,,/home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.srcs/sim_1/new/tb_top_module.sv,,top_module,,,,,,,,

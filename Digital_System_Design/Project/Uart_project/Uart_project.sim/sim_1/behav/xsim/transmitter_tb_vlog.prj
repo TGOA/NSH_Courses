@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../comparetor.sv" \
+"../../../../../controller.sv" \
+"../../../../../counter.sv" \
+"../../../../../filpflop.sv" \
+"../../../../../mux.sv" \
+"../../../../../shift_register.sv" \
+"../../../../../transmitter.sv" \
+"../../../../Uart_project.srcs/sim_1/new/transmitter_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

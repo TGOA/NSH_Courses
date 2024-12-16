@@ -1,0 +1,121 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Sun Dec 15 08:15:07 2024
+| Host         : IT-RDIA-NSH running 64-bit Ubuntu 24.04.1 LTS
+| Command      : report_methodology -file transmitter_methodology_drc_routed.rpt -pb transmitter_methodology_drc_routed.pb -rpx transmitter_methodology_drc_routed.rpx
+| Design       : transmitter
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 17
++-----------+------------------+------------------------------+------------+
+| Rule      | Severity         | Description                  | Violations |
++-----------+------------------+------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell  | 16         |
+| LUTAR-1   | Warning          | LUT drives async reset alert | 1          |
++-----------+------------------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin counter1/counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin counter1/counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin counter1/counter_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin delayedWhatever_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin flip/q_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsm/FSM_sequential_current_state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsm/FSM_sequential_current_state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin shiftting/Data_out_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin shiftting/Q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin shiftting/Q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin shiftting/Q_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin shiftting/Q_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin shiftting/Q_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin shiftting/Q_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin shiftting/Q_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin shiftting/Q_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell shiftting/Q[0]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) delayedWhatever_reg/CLR, fsm/FSM_sequential_current_state_reg[0]/CLR, fsm/FSM_sequential_current_state_reg[1]/CLR, counter1/counter_reg[0]/CLR, counter1/counter_reg[1]/CLR, counter1/counter_reg[2]/CLR, flip/q_reg/CLR, shiftting/Q_reg[0]/CLR, shiftting/Q_reg[1]/CLR, shiftting/Q_reg[2]/CLR, shiftting/Q_reg[3]/CLR, shiftting/Q_reg[4]/CLR, shiftting/Q_reg[5]/CLR, shiftting/Q_reg[6]/CLR, shiftting/Q_reg[7]/CLR (the first 15 of 15 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+

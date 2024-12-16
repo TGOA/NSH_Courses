@@ -32,7 +32,7 @@ module uart(
     
     transmitter tx(
         .valid(valid),
-        .clk(clk),
+        .clk(baud_clk_tx),
         .reset(reset),
         .parity(parity),
         .data_in(data_in),
@@ -40,7 +40,7 @@ module uart(
     );
     
     receiverDP rx (
-        .clk(clk),
+        .clk(baud_clk_rx),
         .reset(reset),
         .in(Data_out),
         .out(data)

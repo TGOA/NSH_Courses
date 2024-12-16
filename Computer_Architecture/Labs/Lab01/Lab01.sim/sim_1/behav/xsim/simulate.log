@@ -1,0 +1,14 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Time: 0 | Reset: 0 | ALU Result: 1
+Time: 10000 | Reset: 1 | ALU Result: 1
+Time: 15000 | Reset: 1 | ALU Result: 0
+Time: 25000 | Reset: 1 | ALU Result: 1
+Time: 55000 | Reset: 1 | ALU Result: 0
+Time: 65000 | Reset: 1 | ALU Result: 1
+Time: 95000 | Reset: 1 | ALU Result: 0
+ALU Result: 0
+Time: 105000 | Reset: 1 | ALU Result: 1
+Time: 135000 | Reset: 1 | ALU Result: 0
+Time: 145000 | Reset: 1 | ALU Result: 1
+$finish called at time : 155 ns : File "/home/it/eda_training/Computer_Architecture/Labs/Lab01/Lab01.srcs/sim_1/new/tb_top_module.sv" Line 39

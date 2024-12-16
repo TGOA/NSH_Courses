@@ -1,0 +1,22 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/it/Downloads/dff.sv,1734282929,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/filpflop.sv,,dff,,,,,,,,
+/home/it/Downloads/nBitCtr.sv,1734190199,systemVerilog,,/home/it/Downloads/recieverCtrl.sv,,nBitCtr,,,,,,,,
+/home/it/Downloads/recieverCtrl.sv,1734282982,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/reciver_top.sv,,recieverCtrl,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/Uart_project/Uart_project.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/Uart_project/Uart_project.srcs/sim_1/new/transmitter_tb.sv,1734282269,systemVerilog,,,,transmitter_tb,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/Uart_project/Uart_project.srcs/sim_1/new/uart_tb.sv,1734283339,systemVerilog,,,,uart_tb,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/clock_devider.sv,1734025797,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/comparetor.sv,,baud_rate_generator,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/comparetor.sv,1733912584,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/controller.sv,,comparetor,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/controller.sv,1734171384,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/counter.sv,,controller,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/counter.sv,1733907911,systemVerilog,,/home/it/Downloads/dff.sv,,counter,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/filpflop.sv,1734173308,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/invDff.sv,,d_flip_flop,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/invDff.sv,1734282885,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/mux.sv,,invDff,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/mux.sv,1734012223,systemVerilog,,/home/it/Downloads/nBitCtr.sv,,mux,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/reciver_top.sv,1734283017,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/shiftReg.sv,,receiverDP,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/shiftReg.sv,1734282506,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/shift_register.sv,,shiftReg,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/shift_register.sv,1734239381,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/transmitter.sv,,shift_register,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/transmitter.sv,1734281966,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/uart.sv,,transmitter,,,,,,,,
+/home/it/eda_training/Digital_System_Design/Project/uart.sv,1734283259,systemVerilog,,/home/it/eda_training/Digital_System_Design/Project/Uart_project/Uart_project.srcs/sim_1/new/uart_tb.sv,,uart,,,,,,,,

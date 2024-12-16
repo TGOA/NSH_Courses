@@ -1,0 +1,48 @@
+
+Unique Assembler Directives:
+- .file
+- .option
+- .attribute
+- .text
+- .section
+- .align
+- .string
+- .globl
+- .type
+- .cfi_startproc
+- .cfi_def_cfa_offset
+- .cfi_offset
+- .cfi_def_cfa
+- .cfi_restore
+- .cfi_endproc
+- .size
+- .ident
+
+Unique Base Instructions:
+- addi
+- sd
+- ld
+- lui
+- call
+- li
+- mv
+- jr
+
+Unique Labels:
+- .LC0
+- .LFB0
+- .LFE0
+
+Unique Pseudo instructions and Their Corresponding Base Instructions:
+- li a5,0
+  - Corresponding base instructions:
+    addi a5, x0, 0
+
+- mv a0, a5
+  - Corresponding base instructions:
+    addi a0, a5, 0
+
+- call printf
+  - Corresponding base instructions:
+    auipc x6, offset
+    jalr x1, offset(x6)
