@@ -4,26 +4,4 @@ Running: /home/it/Xilinx/Vivado/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto a
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "/home/it/eda_training/Digital_System_Design/Project/clock_devider.sv" Line 1. Module baud_rate_generator doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.counter(n=3)
-Compiling module xil_defaultlib.comparetor(n=3)
-Compiling module xil_defaultlib.shift_register
-Compiling module xil_defaultlib.mux
-Compiling module xil_defaultlib.d_flip_flop
-Compiling module xil_defaultlib.controller
-Compiling module xil_defaultlib.transmitter
-Compiling module xil_defaultlib.nBitCtr(n=3)
-Compiling module xil_defaultlib.nBitCtr(n=4)
-Compiling module xil_defaultlib.invDff
-Compiling module xil_defaultlib.shiftReg
-Compiling module xil_defaultlib.dff
-Compiling module xil_defaultlib.recieverCtrl
-Compiling module xil_defaultlib.receiverDP
-Compiling module xil_defaultlib.baud_rate_generator
-Compiling module xil_defaultlib.uart
-Compiling module xil_defaultlib.uart_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot uart_tb_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
