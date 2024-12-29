@@ -1,0 +1,16 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/alu.sv,1735138390,systemVerilog,,/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sources_1/new/alu_controller.sv,,alu,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/imm_gen.sv,1735207628,systemVerilog,,/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sources_1/new/inst_mem.sv,,imm_gen,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/main_control.sv,1735213116,systemVerilog,,/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sources_1/new/program_counter.sv,,main_control,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sim_1/new/tb_inst_mem.sv,1735475384,systemVerilog,,,,tb_inst_mem,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sim_1/new/tb_rv32i_top.sv,1735475022,systemVerilog,,,,tb_rv32i_top,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sources_1/new/alu_controller.sv,1735213976,systemVerilog,,/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sources_1/new/data_mem.sv,,alu_control,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sources_1/new/data_mem.sv,1735475249,systemVerilog,,/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/imm_gen.sv,,data_mem,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sources_1/new/inst_mem.sv,1735476311,systemVerilog,,/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/main_control.sv,,inst_mem,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sources_1/new/program_counter.sv,1735207232,systemVerilog,,/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sources_1/new/reg_file.sv,,program_counter,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sources_1/new/reg_file.sv,1735129372,systemVerilog,,/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sources_1/new/rv32i_top.sv,,reg_file,,,,,,,,
+/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sources_1/new/rv32i_top.sv,1735476204,systemVerilog,,/home/it/eda_training/Computer_Architecture/Labs/Lab06/Adnan_alqarawi/rtl/rtl.srcs/sim_1/new/tb_rv32i_top.sv,,rv32i_top,,,,,,,,

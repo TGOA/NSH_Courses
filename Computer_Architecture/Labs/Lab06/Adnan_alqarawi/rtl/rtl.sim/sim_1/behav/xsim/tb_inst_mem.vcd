@@ -1,0 +1,36 @@
+$date
+   Sun Dec 29 15:33:27 2024
+$end
+$version
+  2019.1
+$end
+$timescale
+  1ps
+$end
+$scope module tb_inst_mem $end
+$var reg 32 ! address [31:0] $end
+$var reg 32 " instruction [31:0] $end
+$scope module dut $end
+$var wire 32 # address [31:0] $end
+$var reg 32 " instruction [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+b10100000000000010010011 "
+b0 #
+$end
+#10000
+b100 !
+b101000000000000100010011 "
+b100 #
+#20000
+b1000 !
+b1000001000000110110011 "
+b1000 #
+#30000
+b1100 !
+b11111111111100011100000110010011 "
+b1100 #
